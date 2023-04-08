@@ -40,6 +40,14 @@
         "image": "https://i.pinimg.com/originals/dd/3b/9c/dd3b9c78de0b5eb6864f3d5e3269fcb3.jpg",
         "Gender": "male",
         "description": "Have a dog named tedderson" 
+      },
+      {
+        "id": 6,
+        "name": "Alexander",
+        "age":27,
+        "image": "https://www.themarysue.com/wp-content/uploads/2022/09/Satoru-Gojo.webp?resize=1200%2C675",
+        "Gender": "male",
+        "description": "Im simple and plain" 
       }
     ]
   }
