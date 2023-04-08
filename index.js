@@ -62,3 +62,14 @@ function getDate(peopleLove,num){
     cls = cls.indexOf(color)==-1? ['card',color].join(' '):'card'
     elementId.setAttribute('class',cls)
 }
+
+// selecting the header twice so I can run changeThePinkToDarkerPink and changeBack functions to change the header
+document.querySelector('.header').addEventListener('mouseover',changeThePinkToDarkerPink)
+document.querySelector('.header').addEventListener('mouseout',changeBack)
+
+function changeThePinkToDarkerPink(){
+    document.querySelector('.header').style.background = '#F81894'
+}
+function changeBack(){
+    document.querySelector('.header').style.background = ''
+}
