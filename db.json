@@ -56,6 +56,14 @@
         "image": "https://images6.fanpop.com/image/polls/1570000/1570622_1466590317324_full.png",
         "Gender": "male",
         "description": "Can still do a back flip" 
+      },
+      {
+        "id": 8,
+        "name": "James",
+        "age":32,
+        "image": "https://animemotivation.com/wp-content/uploads/2020/07/byakuya-kuchiki-long-black-hair-bleach-e1594638660537.jpg",
+        "Gender": "male",
+        "description": "Hot sauce and eggs will win me over" 
       }
     ]
   }
