@@ -48,6 +48,14 @@
         "image": "https://www.themarysue.com/wp-content/uploads/2022/09/Satoru-Gojo.webp?resize=1200%2C675",
         "Gender": "male",
         "description": "Im simple and plain" 
+      },
+      {
+        "id": 7,
+        "name": "Jason",
+        "age":45,
+        "image": "https://images6.fanpop.com/image/polls/1570000/1570622_1466590317324_full.png",
+        "Gender": "male",
+        "description": "Can still do a back flip" 
       }
     ]
   }
