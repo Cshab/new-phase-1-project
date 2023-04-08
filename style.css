@@ -107,3 +107,8 @@ body{
         background-color: lightcoral;
         font-size: 60px;  
     }
+  /* img */
+.resize {
+    width: 900px;
+    height: auto; 
+}
