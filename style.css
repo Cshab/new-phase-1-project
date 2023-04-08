@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://t4.ftcdn.net/jpg/03/88/80/99/360_F_388809926_87rKqTigDmzM3qk6DunfrCFKm9GGxRQv.jpg");
+    background-attachment: fixed;
+}
