@@ -16,6 +16,14 @@
         "image": "https://i.pinimg.com/736x/58/dd/e9/58dde9c397cfb43624674bdf0a149555.jpg",
         "Gender": "female",
         "description": "Hate the cold" 
+      },
+      {
+        "id": 3,
+        "name": "Gabby",
+        "age":25,
+        "image": "https://wallpapers.com/images/hd/studious-cool-girl-cartoon-yumrtk7cy50vu7u0.jpg",
+        "Gender": "female",
+        "description": "Have to much free time" 
       }
     ]
   }
