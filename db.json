@@ -8,6 +8,14 @@
         "Gender": "female",
         "description": "Love walks on the beach" 
     
+      },
+      {
+        "id": 2,
+        "name": "Kimber",
+        "age": 26,
+        "image": "https://i.pinimg.com/736x/58/dd/e9/58dde9c397cfb43624674bdf0a149555.jpg",
+        "Gender": "female",
+        "description": "Hate the cold" 
       }
     ]
   }
