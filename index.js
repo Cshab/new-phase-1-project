@@ -28,3 +28,32 @@ function selectedRadioButton(e){
         Object.entries(peopleObj).filter(findBoy => findBoy[1].Gender==='male').forEach((boys,i) => getDate(boys[1],i))
     }   
 }
+
+// getDate creates holders in li's in side of the ul and put them on the html
+function getDate(peopleLove,num){
+    let cardId = `card_${num}`
+    let card = document.createElement('li')
+    card.id = cardId
+    card.className = 'card'
+    card.innerHTML = `
+    <div class ="boxes">
+    <img class = "resize" src="${peopleLove.image}">
+    <div class ="content">
+    <h4>${peopleLove.name}</h4>
+    <p>
+    <span class="age">Age:${peopleLove.age}</span>
+    </p>
+    <p class ="description">${peopleLove.description}</p>
+    </div>
+    <div class ="likeDislike">
+    <button class ="like" onclick='colorLike(${cardId},"green")'> Like </button>
+    <button class="dislike" onclick='colorLike(${cardId},"red")'> Dislike </button>
+    </div>
+    </div>
+    `
+    document.querySelector('#People-list').appendChild(card)
+    // 
+    card.addEventListener('click',e => console.log(cardId))
+    
+    
+}
