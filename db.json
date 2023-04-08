@@ -1,0 +1,13 @@
+{
+    "People": [
+      {
+        "id": 1,
+        "name": "Sarah",
+        "age": 25,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIFl8JJlBwr55FKflz9sPDYnz--Dkhwp7bbAaKKNzqrRJS4h_j9hMW444Z6oYkE5-A7g1Jt5aPRE&usqp=CAU&ec=48665701",
+        "Gender": "female",
+        "description": "Love walks on the beach" 
+    
+      }
+    ]
+  }
