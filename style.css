@@ -7,3 +7,14 @@ body{
     background-image: url("https://t4.ftcdn.net/jpg/03/88/80/99/360_F_388809926_87rKqTigDmzM3qk6DunfrCFKm9GGxRQv.jpg");
     background-attachment: fixed;
 }
+/* building the header of the page using flexbox and want to increase the front of the h1 to 60px*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: solid 5px black;
+    background-color: lightpink;
+    }
+    h1 {
+        font-size: 100px;
+    }
