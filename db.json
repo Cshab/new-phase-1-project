@@ -32,6 +32,14 @@
         "image": "https://e1.pxfuel.com/desktop-wallpaper/698/757/desktop-wallpaper-beauty-cute-cartoon-girl-cartoon-attitude-girl.jpg",
         "Gender": "female",
         "description": "Have a thing for long car rides" 
+      },
+      {
+        "id": 5,
+        "name": "Jim",
+        "age":22,
+        "image": "https://i.pinimg.com/originals/dd/3b/9c/dd3b9c78de0b5eb6864f3d5e3269fcb3.jpg",
+        "Gender": "male",
+        "description": "Have a dog named tedderson" 
       }
     ]
   }
