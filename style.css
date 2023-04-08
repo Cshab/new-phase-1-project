@@ -64,3 +64,9 @@ body{
     align-items: center;
     padding-top: 30px;
     }
+    /* the continers around card */
+    .boxes {
+        background-color: lightpink;
+        border: 10px solid black;
+            
+        }
