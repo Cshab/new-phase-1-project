@@ -52,8 +52,13 @@ function getDate(peopleLove,num){
     </div>
     `
     document.querySelector('#People-list').appendChild(card)
-    // 
+    
     card.addEventListener('click',e => console.log(cardId))
-    
-    
+}
+
+// color Like changes the class of cards 
+ function colorLike(elementId,color){
+    let cls = elementId.getAttribute('class')
+    cls = cls.indexOf(color)==-1? ['card',color].join(' '):'card'
+    elementId.setAttribute('class',cls)
 }
