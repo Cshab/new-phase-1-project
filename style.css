@@ -56,3 +56,11 @@ body{
     border-radius: 25px;
     background-color: lightcoral;
 }
+/* the ul and li */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    }
