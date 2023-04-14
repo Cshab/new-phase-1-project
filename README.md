@@ -8,7 +8,7 @@ This web application simulates a dating app. You'll choose the option of boys or
 
 # Technologies
 
-.HTML
-.CSS
-.JavaScript
-.Json
+- HTML
+- CSS
+- JavaScript
+- Json
