@@ -1,38 +1,33 @@
-// getting all my json data then calling it to the global scope plus initializing the function
+const peopleObj = []
+
+
 function getAllPeople(){
     fetch('http://localhost:3000/People')
     .then(res => res.json())
-    .then(People => {peopleObj = People})
+    .then(people => {people.forEach(person => peopleObj.push(person))})
 }
-
-let peopleObj 
-
-function initialize(){
-    getAllPeople()
-}
-initialize()
 
 // targeting the form and adding a submit with the function of selectedRadioButton to make json objects into arrays and loop through the targeted arrays, calls getDate which pushes them into a li
 document.querySelector('form').addEventListener('submit', selectedRadioButton)
 
 function selectedRadioButton(e){
     e.preventDefault()
-    let girl = document.getElementById('girl')
-    let boy = document.getElementById('boy')
-    let ul = document.querySelector('#People-list')
+    const girl = document.getElementById('girl')
+    const boy = document.getElementById('boy')
+    const ul = document.querySelector('#People-list')
     ul.innerHTML = ''
     if(girl.checked==true){
-        Object.entries(peopleObj).filter(findGirl => findGirl[1].Gender==='female').forEach((girls,i) => getDate(girls[1],i) )  
+       peopleObj.filter(findGirl => findGirl.Gender==='female').forEach((girls,i) => getDate(girls,i) )  
     }
     else if(boy.checked==true){
-        Object.entries(peopleObj).filter(findBoy => findBoy[1].Gender==='male').forEach((boys,i) => getDate(boys[1],i))
+        peopleObj.filter(findBoy => findBoy.Gender==='male').forEach((boys,i) => getDate(boys,i))
     }   
 }
 
 // getDate creates holders in li's in side of the ul and put them on the html
 function getDate(peopleLove,num){
-    let cardId = `card_${num}`
-    let card = document.createElement('li')
+    const cardId = `card_${num}`
+    const card = document.createElement('li')
     card.id = cardId
     card.className = 'card'
     card.innerHTML = `
@@ -53,14 +48,14 @@ function getDate(peopleLove,num){
     `
     document.querySelector('#People-list').appendChild(card)
     
-    card.addEventListener('click',e => console.log(cardId))
+    // card.addEventListener('click',e => console.log(cardId))
 }
 
-// color Like changes the class of cards 
+// color Like addes a class to cards 
  function colorLike(elementId,color){
-    let cls = elementId.getAttribute('class')
-    cls = cls.indexOf(color)==-1? ['card',color].join(' '):'card'
-    elementId.setAttribute('class',cls)
+    const cls = elementId.getAttribute('class')
+    clsUpdated = cls.indexOf(color)==-1? [color].join(' '):'card'
+    elementId.setAttribute('class',clsUpdated)
 }
 
 // selecting the header twice so I can run changeThePinkToDarkerPink and changeBack functions to change the header
@@ -73,3 +68,6 @@ function changeThePinkToDarkerPink(){
 function changeBack(){
     document.querySelector('.header').style.background = ''
 }
+getAllPeople()
+
+
